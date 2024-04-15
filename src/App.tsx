@@ -35,7 +35,7 @@ const App = () => {
     <section>
       <Container>
         <Heading>Write message to display on LCD</Heading>
-        <Input type='text' placeholder='Write message' value={message} onChange={(e) => setMessage(e.target.value)} />
+        <Input type='text' placeholder='Write message' value={message} maxLength={16} onChange={(e) => setMessage(e.target.value)} />
         <ButtonContainer>
           <Button onClick={onClear}>Clear</Button>
           <Button onClick={onSubmit}>Write</Button>

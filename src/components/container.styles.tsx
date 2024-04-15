@@ -5,6 +5,9 @@ export const Container = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: fit-content;
   height: fit-content;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
 `;
