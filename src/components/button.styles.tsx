@@ -1,8 +1,7 @@
 import { styled } from 'styled-components';
 
-export const SubmitButton = styled.input`
+export const Button = styled.button`
     display: block;
-    margin: 35px auto 20px auto;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 15px;

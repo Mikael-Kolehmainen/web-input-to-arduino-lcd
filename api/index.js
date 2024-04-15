@@ -11,6 +11,7 @@ serialPort.on('open', () => {
 
 app.get('/write', (req, res) => {
     // TODO: Wrap in try-catch for error handling
+    // TODO: return status codes
     serialPort.write(`${req.query.message}\n`, (err) => {
         if (err) {
             return console.log('Error on write: ', err.message);
@@ -18,6 +19,17 @@ app.get('/write', (req, res) => {
         console.log('message written');
     });
 })
+
+app.get('/clear', (req, res) => {
+    // TODO: Wrap in try-catch for error handling
+    // TODO: return status codes
+    serialPort.write(' '.repeat(16), (err) => {
+        if (err) {
+            return console.log('Error on write: ', err.message);
+        }
+        console.log('display cleared');
+    });
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

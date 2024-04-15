@@ -8,5 +8,5 @@ export const Input = styled.input`
     margin: auto;
     outline: none;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 `;
