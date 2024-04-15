@@ -1,8 +1,8 @@
 @font-face {
-    font-family: roboto;
-    src: url(/public/Roboto-Black.ttf);
+  font-family: roboto;
+  src: url(/public/Roboto-Black.ttf);
 }
 
 html, body {
-    font-family: roboto;
+  font-family: roboto;
 }
