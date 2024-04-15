@@ -1,3 +1,5 @@
+Node v14.21.3 for API
+Node v20.12.2 for frontend
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
