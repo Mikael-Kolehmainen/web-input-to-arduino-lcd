@@ -12,8 +12,7 @@ const App = () => {
 
   const onClear = async () => {
     try {
-      // TODO: Move URL to environment variables.
-      await fetch('http://localhost:3001/clear');
+      await fetch(`${process.env.REACT_APP_BACKEND_API_URI}/clear`);
       setMessage('');
     } catch (error) {
       console.error(error);
@@ -23,8 +22,7 @@ const App = () => {
 
   const onSubmit = async () => {
     try {
-      // TODO: Move URL to environment variables.
-      await fetch(`http://localhost:3001/write?message=${message}`);
+      await fetch(`${process.env.REACT_APP_BACKEND_API_URI}/write?message=${message}`);
     } catch (error) {
       console.error(error);
       setError('Failed to write message');
