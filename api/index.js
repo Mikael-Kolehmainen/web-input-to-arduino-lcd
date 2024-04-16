@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const port = 3001;
+// TODO: move port name to .env file so it can easily be changed.
 const serialPort = new SerialPort('COM6', { baudRate: 9600 });
 
 app.use(cors());

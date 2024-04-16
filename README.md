@@ -20,7 +20,8 @@
 <h2>Project Libraries</h2>
 <ul style='font-size: 16px;'>
   <li>Node v20.12.2 (frontend)</li>
-  <li>Node v14.21.3 (backend)</li>
+  <li>Node v20.12.2 (backend) for armv7l (Raspberry Pi OS)</li>
+  <li>Node v14.21.3 (backend) for Windows 8.1</li>
   <li>React v18.2</li>
   <li>And more... (check package.json)</li>
 </ul>
